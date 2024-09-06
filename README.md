@@ -1,4 +1,4 @@
-## **README.md Descontraído para seu Projeto de Campeões do LoL**
+## **README.md Para seu Projeto de Campeões do LoL**
 
 Criei um site bem simples para os amantes de League of Legends que querem saber mais sobre seus campeões favoritos. Digita o nome do campeão e a mágica acontece! ‍♂️
 
