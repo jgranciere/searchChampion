@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+body{
+    font-family: "Cinzel", serif;
+    background-color: #1e2127;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: #daa520; /* Cor do texto */
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+section input{
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #c4b998;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #111318;
+    font-family: "Cinzel", serif;
+    
+}
+
+section input:focus{
+    outline: 0.1rem solid #daa52069
+}
+
+section button{
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #30475E;
+    background-color: #30475E;
+    color: #c4b998;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-family: "Cinzel", serif;
+    transition: letter-spacing 0.3s ease-out;
+}
+
+section button:hover{
+    border: 2px solid #daa52063;
+    background-color: #30475E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.1rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.resultados-pesquisa{
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+
+.item-resultado{
+    background-color: #111318;
+    border: 1px solid #daa52063;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado h2{
+    font-size: 1.5rem;
+    color: #222831;
+}
+
+.item-resultado a{
+    text-decoration: none;
+    color: #daa520;
+}
+
+.item-resultado a:hover{
+    text-decoration: underline;
+}
+
+.descricao-meta{
+    color: #c4b998;
+    margin: 0.5rem 0;
+}
+
+
+footer {
+    background-color: #111318; 
+    color: #daa520; 
+    text-align: center; 
+    padding: 0; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0;
+    font-size: 1rem; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
